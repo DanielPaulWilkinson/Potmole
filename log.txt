@@ -1,0 +1,68 @@
+commit 627d4cd0b765f5a491a4f48c84ed0df30928ffbd
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Mon April 25 12:49:44 2016 +0100
+
+    Created API functionality
+
+
+commit af852d0036f104f8c6045c09b237621572c857dc
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Mon April 25 15:44:05 2016 +0100
+
+    added researched node modules
+
+
+commit 22426d7b0e122d26e4bced6153cedc23e3e838fa
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Tue April 26 11:38:14 2016 +0100
+
+    Moved all content dealing with client side to a client side file
+
+
+commit fe68b63acc2bcc554eb760247ea97db5b991a19b
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Tue April 26 15:33:15 2016 +0100
+
+    managed to finsh functionality of client side
+
+
+commit 07c3174a7620a35c6206b39835a1cab4d46e3a96
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Wed April 28 12:31:24 2016 +0100
+
+    added suspected modules and JS
+
+
+commit 089616b40db7993f50fb5b525fd3aa6a4e923c37
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Wed April 28 18:29:57 2016 +0100
+
+    Added bootstrap fonts and assets
+
+
+commit d73f2d78af8097333a1cab41ab60a1c69009d581
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Thu April 29 13:27:49 2016 +0100
+
+    Addded bootstrap to style pages
+
+
+commit be6a3e2a1c17381985455a0f874932f5cf9ab7f3
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Fri April 30 15:25:33 2016 +0100
+
+    Added Potential needed images and favcons
+
+
+commit 2e75b2cabb047afa755541452b928839ffa7eb0e
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Sat May 1 15:24:20 2016 +0100
+
+    added admin page
+
+
+commit a066ad6a4133165de6ccd64c01fd692dbf4ed180
+Author: Daniel Wilkinson <bg69tg@student.sunderland.ac.uk>
+Date:   Sun May 2 16:20:37 2016 +0100
+
+    Added Index to client

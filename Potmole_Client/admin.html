@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta content=
+    "This site alows you to find the perfect path to you're cyclng experience without crashing or finding any potholes, how ever if you come across one please report it."
+    name="description">
+    <meta content="Daniel Wilkinson" name="author">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"
+    rel="stylesheet">
+    <title>
+      Pot-Mole | Admin
+    </title>
+  </head>
+  <body role="document">
+    <!-- Fixed navbar -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" class=
+          "navbar-toggle collapsed" data-target="#navbar" data-toggle=
+          "collapse" type="button"><span class="sr-only">Toggle
+          navigation</span> <span class="icon-bar"></span> <span class=
+          "icon-bar"></span> <span class="icon-bar"></span></button> <a class=
+          "navbar-brand" href="#">Pot-Mole</a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html#">Home</a>
+            </li>
+
+            <li>
+              <a href="index.html#about">About Me</a>
+            </li>
+
+            <li>
+              <a href="index.html#contact">Contact Me</a>
+            </li>
+
+            <li>
+              <a href="index.html#pothole">Add Pothole</a>
+            </li>
+
+            <li>
+              <a href="admin.html">Admin Section</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+    <script>
+    </script>
+    <div class="container theme-showcase" role="main">
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>
+          Reported PotHoles
+        </h2>
+
+        <p>
+          Hey admin, remember, here we can delete data that we dont need and
+          edit the data if need be!
+        </p>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  #(Clickable)
+                </th>
+                <th>
+                  Title
+                </th>
+                <th>
+                  By
+                </th>
+                <th>
+                  Delete?
+                </th>
+              </tr>
+            </thead>
+
+            <tbody id="tablerows">
+            </tbody>
+          </table>
+        </div>
+        <!-- Modal -->
+
+        <div aria-labelledby="myModalLabel" class="modal fade" id="myModal"
+        role="dialog" tabindex="-1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button aria-label="Close" class="close" data-dismiss="modal"
+                type="button"><span aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">
+                  Modal title
+                </h1>
+              </div>
+
+              <div class="modal-body">
+                <form action="/auth/update/" class="form-horizontal" enctype=
+                "multipart/form-data" method="post" role="form">
+                  <div class="form-group">
+                    <h3 class="col-md-offset-2">
+                      User Position on the map
+                    </h3>
+
+                    <div class="col-md-4" id="map_canvas" style=
+                    "height:250px; width:100%;">
+                    </div>
+                  </div>
+
+                  <h3 class="col-md-offset-2">
+                    Phothole Image User Uplaoded
+                  </h3>
+
+                  <div class="form-group">
+                    <img class="col-md-4" id="changeimage" src="" style=
+                    "height:300px; width:100%;">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="Id">Id:</label>
+                    <div class="col-sm-8">
+                      <input class="form-control" id="Id" name="Id" readonly
+                      type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for=
+                    "Lan">Latitude:</label>
+                    <div class="col-sm-8">
+                      <input class="form-control" id="Lan" name="Latitude"
+                      type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for=
+                    "Lon">Longitude:</label>
+                    <div class="col-sm-8">
+                      <input class="form-control" id="Lon" name="Longitude"
+                      type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for=
+                    "Title">Title:</label>
+                    <div class="col-sm-8">
+                      <input class="form-control" form="" id="Title" name=
+                      "Title" rows="5">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for=
+                    "Comment">Comment:</label>
+                    <div class="col-sm-8">
+                      <textarea class="form-control" id="Comment" name=
+                      "Comment" rows="5"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="User">Submitted
+                    By:</label>
+                    <div class="col-sm-8">
+                      <input class="form-control" id="User" name="User" rows=
+                      "5">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for=
+                    "PotStatus">Pot-hole Status:</label>
+                    <div class="col-sm-8">
+                      <input class="form-control" id="PotStatus" name=
+                      "PotStatus" rows="5">
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" type=
+                "button">Close</button> <button class="btn btn-primary" form=
+                "myform" id="SaveChanges" type="button">Save Changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alt2">
+        <div class="container">
+          <footer>
+            &copy; Daniel Wilkinson<br>
+            <a href="#">Back to Top</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places" type=
+    "text/javascript">
+    </script>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="js/admin.js">
+    </script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="js/ie10-viewport-bug-workaround.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+  </body>
+</html>
